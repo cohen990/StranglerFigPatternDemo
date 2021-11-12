@@ -5,6 +5,8 @@ When we have a system that wants to present a unified face to the customer, but 
 
 This is very useful when beginning a migration to an updated version of an existing system.
 
+![Diagram of strangler fig pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/_images/strangler.png)
+
 ## How is it done?
 
 The idea is that we set up a simple proxy. This is what the users interact with. The proxy will then forward requests on to the old system or the new system as we choose. We can be as granular as we like with the selection. We can do it based on path, we can do it based on random chance if we want to split test something or canary release it. Etc.
@@ -45,3 +47,4 @@ Clicking the link back to `Main` will take you back to the blue web page
 
 ## Wow that's so amazing. Literally I've never seen anything so incredible in my life. How can I do it too?
 The `./proxy/index.js` file has comments in it explaining how this is done. Hopefully it's clear enough.
+https://docs.microsoft.com/en-us/azure/architecture/patterns/strangler-fig for further reading
