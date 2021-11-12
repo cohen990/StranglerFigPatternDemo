@@ -18,11 +18,17 @@ It's quite powerful and not hard to set up.
 This repo is a simple demonstration of the pattern in principle. To run it, you need to open 3 terminals. 
 
 Terminal 1
-`cd old && node index.js`
+```
+cd old && node index.js
+```
 Terminal 2
-`cd new && node index.js`
+```
+cd new && node index.js
+```
 Terminal 3
-`cd proxy && node index.js`
+```
+cd proxy && node index.js
+```
 
 You'll now have 3 servers running on your machine.
 
