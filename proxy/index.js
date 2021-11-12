@@ -28,7 +28,7 @@ function onRequest(client_req, client_res) {
   var proxy_options = new_options
 
   // We can direct each path to go to a different server by switching up the proxy based on the path of the rquest
-  if(client_req.url == "/features"){
+  if (client_req.url == "/features") {
     proxy_options = old_options
   }
 

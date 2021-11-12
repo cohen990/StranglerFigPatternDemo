@@ -1,6 +1,6 @@
 # The Strangler Pattern
 
-When we have a system that wants to present a unified face to the customer, but have multiple versions of the system to actuall host the pages, we can use a strangler pattern.
+When we have a system that wants to present a unified face to the customer, but have multiple versions of the system to actually host the pages, we can use a strangler pattern.
 
 The idea is that we set up a simple proxy. This is what the users interact with. The proxy will then forward requests on to the old system or the new system as we choose. We can be as granular as we like with the selection. We can do it based on path, we can do it based on random chance if we want to split test something or canary release it. Etc.
 
